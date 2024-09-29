@@ -1,0 +1,155 @@
+/* Basic reset and layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f9c5d1, #f9e2ae);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+    border: 2px solid #f9c5d1;
+}
+
+.music-player {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.circle {
+    background: #ff6f61;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.circle:hover {
+    background: #ff4c3b;
+}
+
+.circle i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.song-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #ff6f61;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ff6f61;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+audio {
+    width: 100%;
+}
+
+#progress {
+    width: 100%;
+    margin: 10px 0;
+    background: #f0f0f0;
+    border-radius: 5px;
+    height: 8px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+#progress::-webkit-slider-thumb {
+    background: #ff6f61;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    -webkit-appearance: none;
+}
+
+#progress::-moz-range-thumb {
+    background: #ff6f61;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls div {
+    background: #ff6f61;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+.controls div:hover {
+    background: #ff4c3b;
+}
+
+.controls i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.playlist {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.playlist h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+#playlist {
+    list-style-type: none;
+    padding: 0;
+}
+
+#playlist li {
+    background: #ffebee;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#playlist li:hover {
+    background: #ffccd5;
+}
